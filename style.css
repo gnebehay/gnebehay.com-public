@@ -1,0 +1,85 @@
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+    font-family: 'Cabin', serif;
+}
+
+table.code td {
+	padding-top: 20px;
+	padding-right: 30px;
+}
+
+table.code img {
+	width: 200px;
+}
+
+pre {
+    padding: 0;
+}
+
+.codepic {
+	width: 300px;
+}
+
+.codeentry {
+	margin-bottom: 50px;
+}
+
+
+.sidecolumn {
+	float: right;
+	margin-left: 30px;
+}
+
+.pubentry {
+	padding: 10px 0px 10px 0;
+}
+
+.me {
+	font-weight: bold;
+}
+
+.youtube {
+	border: 1px solid black;
+}
+
+.close-margin {
+	margin-top: 0px;
+}
+
+.title {
+	text-align: center;
+}
+
+.authors {
+	text-align: center;
+	margin-top: 0px;
+}
+
+.snip-logo {
+	display: block;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

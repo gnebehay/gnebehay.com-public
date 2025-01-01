@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Robust Object Tracking Based on Tracking-Learning-Detection</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,700">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61297334-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+
+    
+
+    
+
+    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Georg Nebehay</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/code/">Code</a></li>
+            <li><a href="/publications/">Publications</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- <header class="header">
+      <h1>Georg Nebehay</h1>
+      <a href="https://twitter.com/gnebehay" target="_blank"><img src="/img/Twitter_logo_blue.png" alt="Follow me on twitter" width="46"></a>
+      <a href="https://github.com/gnebehay" target="_blank"><img src="/img/Octocat.png" width="46" alt="View my GitHub page"></a>
+      <script>insert_mail_address();</script>
+    <noscript>Sorry, you need Javascript on to email me.</noscript>
+    </header>
+
+    <div class="navigation">
+        <a href="/" class="menuitem">Home</a><a
+            href="/code/" class="menuitem">Code</a><a
+            href="/publications/" class="menuitem">Publications</a><a
+            href="/blog/" class="menuitem">Blog</a>
+    </div> -->
+
+    <div class="container">
+
+        
+<h1 class='title'>Robust Object Tracking Based on Tracking-Learning-Detection</h1>
+<p class='authors'>Georg Nebehay</p>
+
+<h2>Abstract</h2>
+<p class='close-margin'>Current state-of-the-art methods for object tracking perform adaptive tracking-by-detection, meaning that a detector predicts the position of an object and adapts its parameters to the object&#39;s appearance at the same time. While suitable for cases when the object does not disappear from the scene, these methods tend to fail on occlusions. In this work, we build on a novel approach called Tracking-Learning-Detection (TLD) that overcomes this problem. In methods based on TLD, a detector is trained with examples found on the trajectory of a tracker that itself does not depend on the object detector. By decoupling object tracking and object detection we achieve high robustness and outperform existing adaptive tracking-by-detection methods. We show that by using simple features for object detection and by employing a cascaded approach a considerable reduction of computing time is achieved. We evaluate our approach both on existing standard single-camera datasets as well as on newly recorded sequences in multi-camera scenarios.</p>
+
+<h2>Published In</h2>
+<p class ='close-margin'>Master&#39;s thesis, 2012.
+
+    
+
+    <br />
+    Download the <a href='../master_thesis/master_thesis.pdf'>PDF <img src="/img/pdficon_large.png"  alt='PDF logo' title='Download pdf' /></a>
+
+    
+
+    
+
+    
+
+</p>
+
+<h2>Code</h2>
+<p class='close-margin'>
+Download the code from our
+<a href='https://github.com/gnebehay/OpenTLD'>GitHub repository.<img src="/img/Octocat-64.png" height='32' alt='GitHub logo' title='Download code' /></a>
+</p>
+
+
+
+
+
+<h2>Project Page</h2>
+<p class='close-margin'>
+More information is available at the
+<a href='/tld'>Project page.</a>
+</p>
+
+
+
+
+<h2>BibTex</h2>
+<pre class='close-margin'>@mastersthesis{Nebehay2012MSC,
+    author = {Nebehay, G.},
+    school = {Faculty of Informatics, TU Vienna},
+    title = {Robust Object Tracking Based on {Tracking-Learning}-Detection},
+    year = {2012}
+}</pre>
+
+
+
+<a href='/publications/'>Back to publication list</a>
+
+
+
+
+        
+
+    </div>
+
+  </body>
+</html>

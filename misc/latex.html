@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,700">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61297334-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+
+    <script>
+
+    hljs.configure({languages: ['tex']});
+    hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/tomorrow-night.min.css">
+
+    
+
+    
+
+    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Georg Nebehay</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/code/">Code</a></li>
+            <li><a href="/publications/">Publications</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- <header class="header">
+      <h1>Georg Nebehay</h1>
+      <a href="https://twitter.com/gnebehay" target="_blank"><img src="/img/Twitter_logo_blue.png" alt="Follow me on twitter" width="46"></a>
+      <a href="https://github.com/gnebehay" target="_blank"><img src="/img/Octocat.png" width="46" alt="View my GitHub page"></a>
+      <script>insert_mail_address();</script>
+    <noscript>Sorry, you need Javascript on to email me.</noscript>
+    </header>
+
+    <div class="navigation">
+        <a href="/" class="menuitem">Home</a><a
+            href="/code/" class="menuitem">Code</a><a
+            href="/publications/" class="menuitem">Publications</a><a
+            href="/blog/" class="menuitem">Blog</a>
+    </div> -->
+
+    <div class="container">
+
+        
+
+        
+
+        
+
+        <h1>Latex</h1>
+<h2>Pycode</h2>
+<p>Caveat: Don't end a pycode environment with a comment, it will cause harm.</p>
+<h1>Caption package</h1>
+<p>The caption package has the good intention of improving the appearance of figure captions.
+Unfortunately it changes the default style in a non-verbose way,
+which makes it dangerous to use in documents with existing formatting rules.
+Furthermore the subcaption package does not really tell that it loads the caption package behind the scenes.</p>
+<h2>Positioning of pgfplots</h2>
+<p>Current answer: An axis environment is a special tikz node. It can be
+given a name using the option [name=abc] and be referenced as such. It
+can be positioned using the options <code>[at=(...)]</code> and <code>[anchor=...]</code>. It can
+NOT be positioned with the positioning library for reasons unknown.</p>
+<h2>Images in tikz/pgfplots</h2>
+<p>It is possible to add images to plots using</p>
+<pre><code>\node {\includegraphics[width=.5\linewidth]{image}}
+</code></pre>
+
+<p>or</p>
+<pre><code>\begin{axis}[width=.5\linewidth,
+    enlargelimits=false,
+    axis lines=none,
+    ticks=none,
+    scale only axis,
+    axis equal image]
+    \addplot graphics[xmin=0,ymin=0,xmax=320,ymax=200] {david};
+\end{axis}
+</code></pre>
+
+<p>The latter is useful when more plots are added to the image. It is
+however painful that the image dimensions have to be specified for each
+and every image. The reason behind this is that the image is stretched
+to fit into the axis. The key [axis equal image] prevents this, but
+xmin,xmax,ymin,ymax still has to be specified manually, determining the
+image scaling.</p>
+
+        
+
+
+        
+
+    </div>
+
+  </body>
+</html>

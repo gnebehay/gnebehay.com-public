@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Consensus-based Matching and Tracking of Keypoints for Object Tracking</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,700">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61297334-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+
+    
+
+    
+
+    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Georg Nebehay</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/code/">Code</a></li>
+            <li><a href="/publications/">Publications</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- <header class="header">
+      <h1>Georg Nebehay</h1>
+      <a href="https://twitter.com/gnebehay" target="_blank"><img src="/img/Twitter_logo_blue.png" alt="Follow me on twitter" width="46"></a>
+      <a href="https://github.com/gnebehay" target="_blank"><img src="/img/Octocat.png" width="46" alt="View my GitHub page"></a>
+      <script>insert_mail_address();</script>
+    <noscript>Sorry, you need Javascript on to email me.</noscript>
+    </header>
+
+    <div class="navigation">
+        <a href="/" class="menuitem">Home</a><a
+            href="/code/" class="menuitem">Code</a><a
+            href="/publications/" class="menuitem">Publications</a><a
+            href="/blog/" class="menuitem">Blog</a>
+    </div> -->
+
+    <div class="container">
+
+        
+<h1 class='title'>Consensus-based Matching and Tracking of Keypoints for Object Tracking</h1>
+<p class='authors'>Georg Nebehay and Roman Pflugfelder</p>
+
+<h2>Abstract</h2>
+<p class='close-margin'>We propose a novel keypoint-based method for long-term model-free object tracking in a combined matching-and-tracking framework. In order to localise the object in every frame, each keypoint casts votes for the object center. As erroneous keypoints are hard to avoid, we employ a novel consensus-based scheme for outlier detection in the voting behaviour. To make this approach computationally feasible, we propose not to employ an accumulator space for votes, but rather to cluster votes directly in the image space. By transforming votes based on the current keypoint constellation, we account for changes of the object in scale and rotation. In contrast to competing approaches, we refrain from updating the appearance information, thus avoiding the danger of making errors. The use of fast keypoint detectors and binary descriptors allows for our implementation to run in real-time. We demonstrate experimentally on a diverse dataset that is as large as 60 sequences that our method outperforms the state-of-the-art when high accuracy is required and visualise these results by employing a variant of success plots.</p>
+
+<h2>Published In</h2>
+<p class ='close-margin'>Winter Conference on Applications of Computer Vision, 2014.
+
+    
+
+    <br />
+    Download the <a href='../wacv_2014/wacv_2014.pdf'>PDF <img src="/img/pdficon_large.png"  alt='PDF logo' title='Download pdf' /></a>
+
+    
+
+    
+
+    <br />
+    &lt;strong&gt;Best Paper Award.&lt;/strong&gt;
+
+    
+
+    
+
+</p>
+
+<h2>Code</h2>
+<p class='close-margin'>
+Download the code from our
+<a href='https://github.com/gnebehay/CMT'>GitHub repository.<img src="/img/Octocat-64.png" height='32' alt='GitHub logo' title='Download code' /></a>
+</p>
+
+
+
+
+
+<h2>Project Page</h2>
+<p class='close-margin'>
+More information is available at the
+<a href='/cmt'>Project page.</a>
+</p>
+
+
+
+
+<h2>BibTex</h2>
+<pre class='close-margin'>@inproceedings{Nebehay2014WACV,
+    author = {Nebehay, Georg and Pflugfelder, Roman},
+    booktitle = {Winter Conference on Applications of Computer Vision},
+    month = mar,
+    pages = {862--869},
+    publisher = {IEEE},
+    title = {Consensus-based Matching and Tracking of Keypoints for Object Tracking},
+    year = {2014}
+}</pre>
+
+
+
+<a href='/publications/'>Back to publication list</a>
+
+
+
+
+        
+
+    </div>
+
+  </body>
+</html>

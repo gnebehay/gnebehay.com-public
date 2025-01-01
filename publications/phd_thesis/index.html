@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>A Deformable Part Model for One-Shot Object Tracking</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:400,700">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-61297334-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+
+    
+
+    
+
+    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Georg Nebehay</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/code/">Code</a></li>
+            <li><a href="/publications/">Publications</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- <header class="header">
+      <h1>Georg Nebehay</h1>
+      <a href="https://twitter.com/gnebehay" target="_blank"><img src="/img/Twitter_logo_blue.png" alt="Follow me on twitter" width="46"></a>
+      <a href="https://github.com/gnebehay" target="_blank"><img src="/img/Octocat.png" width="46" alt="View my GitHub page"></a>
+      <script>insert_mail_address();</script>
+    <noscript>Sorry, you need Javascript on to email me.</noscript>
+    </header>
+
+    <div class="navigation">
+        <a href="/" class="menuitem">Home</a><a
+            href="/code/" class="menuitem">Code</a><a
+            href="/publications/" class="menuitem">Publications</a><a
+            href="/blog/" class="menuitem">Blog</a>
+    </div> -->
+
+    <div class="container">
+
+        
+<h1 class='title'>A Deformable Part Model for One-Shot Object Tracking</h1>
+<p class='authors'>Georg Nebehay</p>
+
+<h2>Abstract</h2>
+<p class='close-margin'>As cameras become ubiquitously available, the need for analyzing video sequences on-the-fly arises. An important class of applications requires algorithms that are able to continuously track an a-priori unknown object of interest as it makes its way through the scene. This problem is difficult, as no training data can be used beforehand to create an object model. In this thesis, this problem is referred to as one-shot object tracking. Extensive literature about the topic of one-shot object tracking is available, still the performance of state-of-the-art one-shot tracking algorithms on realistic sequences leaves much to be desired. In this thesis the viewpoint is taken that the deformation of objects of interest acts as a major obstacle for achieving satisfactory results. While approaches have been proposed in the literature for dealing with this challenge, they either are too simple to be of use for complex objects or require a considerable amount of training data to work. However, in one-shot object tracking there is by definition only one training example available. More training examples can be collected from the video sequence in an online manner, however this process is error-prone and can lead to the undesired effect of accumulating errors so that the object model is no longer a good representation of the object of interest. In this thesis, a deformable part model for one-shot object tracking is proposed, aiming at providing a robust model for deformable objects that does not rely on model updates to work. Instead, it operates on the basic assumption that object parts are connected by mediating parts, like an arm might connect a hand to the torso of a person. One advantage of the proposed model is the independence on the actual parts representation. We suggest to leverage the synergies between two very different methods for establishing parts correspondences. These methods consist on the one hand of static correspondences, which are based on training information only. This type of correspondences is robust, but unable to adapt to new object appearances. A complementary method can be found in adaptive correspondences, which are computed from a very recent appearance of the object. Adaptive correspondences lack the robustness of static correspondences, but can provide necessary accuracy. To assess the usefulness of the proposed model in practice, we conduct a rigorous evaluation on a dataset of 77 sequences. This evaluation includes a comparison to state-of-the art tracking algorithms, the effect of employing different part representations as well as additional experiments that reveal insights about internal workings of the proposed model. We find that the proposed deformable part model gives a significant performance improvement over the state of the art.</p>
+
+<h2>Published In</h2>
+<p class ='close-margin'>PhD thesis, 2016.
+
+    
+
+    <br />
+    Download the <a href='../phd_thesis/phd_thesis.pdf'>PDF <img src="/img/pdficon_large.png"  alt='PDF logo' title='Download pdf' /></a>
+
+    
+
+    
+
+    
+
+</p>
+
+<h2>Code</h2>
+<p class='close-margin'>
+Download the code from our
+<a href='https://github.com/gnebehay/CppMT'>GitHub repository.<img src="/img/Octocat-64.png" height='32' alt='GitHub logo' title='Download code' /></a>
+</p>
+
+
+
+
+
+<h2>Project Page</h2>
+<p class='close-margin'>
+More information is available at the
+<a href='/cmt'>Project page.</a>
+</p>
+
+
+
+
+<h2>BibTex</h2>
+<pre class='close-margin'>@phdthesis{Nebehay2016PHD,
+    author = {Nebehay, Georg},
+    month = sep,
+    school = {Graz University of Technology},
+    title = {A Deformable Part Model for {One-Shot} Object Tracking},
+    year = {2016}
+}</pre>
+
+
+
+<a href='/publications/'>Back to publication list</a>
+
+
+
+
+        
+
+    </div>
+
+  </body>
+</html>
